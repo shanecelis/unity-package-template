@@ -1,8 +1,6 @@
 {
     "name": "Zigurous.Template.Editor.Tests",
-    "references": [
-        "GUID:17744dc8841f01845950176f54e87817"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
