@@ -5,5 +5,5 @@
 # Nevermind. Perl will handle it.
 
 echo '  "guids": ['
-grep -hr ^guid * | awk '{printf "    \"%s\",\n", $2}' | perl -pe 'BEGIN { $/=""; } { s/,([^,]*)$/$1/gs; }'
+grep -hr ^guid * | sort | awk '{printf "    \"%s\",\n", $2}' | perl -pe 'BEGIN { $/=""; } { s/,([^,]*)$/$1/gs; }'
 echo '  ],'
