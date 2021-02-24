@@ -15,29 +15,39 @@
   "symbols": {
     "name": {
       "type": "parameter",
-      "defaultValue": "MyPackage",
-      "replaces": "Template",
+      "defaultValue": "My Package",
+      "replaces": "Template"
+    },
+    "company": {
+      "type": "parameter",
+      "defaultValue": "Acme",
+      "replaces": "Zigurous"
+    },
+    "nameNoSpaces": {
+      "type": "derived",
+      "valueSource": "name",
+      "valueTransform": "ValueWithoutSpaces",
       "fileRename": "Template"
+    },
+    "companyNoSpaces": {
+      "type": "derived",
+      "valueSource": "company",
+      "valueTransform": "ValueWithoutSpaces",
+      "fileRename": "Zigurous"
     },
     "nameLower": {
       "type": "generated",
       "generator": "casing",
       "parameters": {
-        "source":"name",
+        "source":"nameNoSpaces",
         "toLower": true
       }
-    },
-    "company": {
-      "type": "parameter",
-      "defaultValue": "Acme",
-      "replaces": "Zigurous",
-      "fileRename": "Zigurous"
     },
     "companyLower": {
       "type": "generated",
       "generator": "casing",
       "parameters": {
-        "source": "company",
+        "source": "companyNoSpaces",
         "toLower": true
       }
     },
@@ -81,11 +91,6 @@
         ]
       }
     },
-    "displayName": {
-      "type": "parameter",
-      "defaultValue": "My Package",
-      "replaces": "Zigurous Template"
-    },
     "author": {
       "type": "parameter",
       "defaultValue": "John Smith",
@@ -103,7 +108,7 @@
       "pattern": "^.*\\.(?=[^\\.]+$)",        // regex to match everything up to and including the final "."
       "replacement": ""  // replace it with empty string
     },
-    "ValueAsFilename": {
+    "ValueWithoutSpaces": {
       "identifier": "replace",
       "pattern": " ",
       "replacement": ""
