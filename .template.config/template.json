@@ -4,7 +4,7 @@
   "classifications": [ "Unity3D", "Package" ],
   "name": "Unity Package",
   "identity": "seawisphunter.unitypackage",
-  // "groupIdentity": "seawisphunter",
+  "groupIdentity": "seawisphunter",
   "shortName": "unitypackage",
   "tags": {
     "language": "C#",
@@ -23,6 +23,30 @@
       "defaultValue": "2018.4",
       "replaces":"2019.4"
     }
-  }
+  },
+  "guids": [
+    "a14955afcaedcdc4593859f360004f31",
+    "17744dc8841f01845950176f54e87817",
+    "fe09d9e5121f61d46ba3a40d11da447b",
+    "e993d0025bd900f4587d33da9e67a8a1",
+    "2dcb02c4ba1b25141b7cb25e25135974",
+    "11163bd9f181f4b489c96e3d91a4d07f",
+    "da7f2eeb1876b664eabfd0d97f61d041",
+    "96cc9e30d405f79469af0fc01a07e76b",
+    "b99b5721514f6b34ba687038e889c707",
+    "f981e48cd0cbde246b1f5fe65ebb00fd",
+    "abe1f18a4d378414baf7bf212b7106d5",
+    "0acea71f743abe647a4a0f888d3f45d8",
+    "00c2477adb71bbc40b96d2e2ed903614"
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [ ".git/**" ]
+        }
+      ]
+    }
+  ]
 
 }
