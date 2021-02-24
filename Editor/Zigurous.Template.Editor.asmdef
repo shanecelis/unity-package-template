@@ -1,13 +1,14 @@
 {
     "name": "Zigurous.Template.Editor",
-    "references": [],
+    "references": [
+        "Zigurous.Template"
+    ],
+    "optionalUnityReferences": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+    "defineConstraints": []
 }
