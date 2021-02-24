@@ -1,31 +1,52 @@
 # Unity Package Template
 
-This is a Unity Package Template made according to Unity's [layout convention](https://docs.unity3d.com/Manual/cus-layout.html). It works with dotnet templates.
+This is a Unity Package Template made according to Unity's [layout convention](https://docs.unity3d.com/Manual/cus-layout.html). It works as a dotnet template.
 
 ## Installation
 
+Install the template.
+
+    $ git clone https://github.com/shanecelis/unity-package-template
     $ dotnet new --install unity-package-template
     
 ## Usage
 
+Create a directory. Choose the name carefully; its name will your package's name.
+
     $ mkdir MyPackage
     $ cd MyPackage
-    $ dotnet new unitypackage -c "My Company"
+    $ dotnet new unitypackage --company "My Company"
     
-This template does not try to set every possible thing within the template. If it's only located within the `package.json` file---like the package description---then you're expected to edit it there.
+This will create the following files:
+
+    MyPackage
+    ├── CHANGELOG.md
+    ├── Documentation~
+    │   └── MyPackage.md
+    ├── Editor
+    │   ├── EditorExample.cs
+    │   └── MyCompany.MyPackage.Editor.asmdef
+    ├── LICENSE.md
+    ├── README.md
+    ├── Runtime
+    │   ├── MyCompany.MyPackage.asmdef
+    │   └── RuntimeExample.cs
+    ├── Tests
+    │   ├── Editor
+    │   │   ├── EditorExampleTest.cs
+    │   │   └── MyCompany.MyPackage.Editor.Tests.asmdef
+    │   └── Runtime
+    │       ├── MyCompany.MyPackage.Tests.asmdef
+    │       └── RuntimeExampleTest.cs
+    └── package.json
+
+This template does not try to set up everything perfectly. If a value is only located within the `package.json` file---like the package description---then you're expected to edit it there.  (After all template generation is something you run once.)
     
     $ $EDITOR package.json
     
 ## Using the Package
 
-The Unity Package Manager can load a package from a Git repository on a remote server.
-
-To load a package from a Git URL:
-
-1. Open the Package Manager window.
-2. Click the add (`+`) button in the status bar.
-3. Select **Add package from git URL** from the add menu.
-4. Enter its Git URL in the text box and click `Add**.
+See Unity's documentation for ways that you can [share your package](https://docs.unity3d.com/Manual/cus-share.html).
 
 ## Technical Notes
 
