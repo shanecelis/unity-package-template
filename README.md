@@ -11,13 +11,13 @@ Install the template.
     
 ## Usage
 
-Create a directory. Choose the name carefully; its name will your package's name.
+Create a directory. Choose the name carefully; its name is your package's name.
 
     $ mkdir MyPackage
     $ cd MyPackage
     $ dotnet new unitypackage --company "My Company"
     
-This will create the following files:
+This creates the following files:
 
     MyPackage
     ├── CHANGELOG.md
@@ -39,8 +39,8 @@ This will create the following files:
     │       ├── MyCompany.MyPackage.Tests.asmdef
     │       └── RuntimeExampleTest.cs
     └── package.json
-
-This template does not try to set up everything perfectly. If a value is only located within the `package.json` file---like the package description---then you're expected to edit it there.  (After all template generation is something you run once.)
+    
+The generated package name is "com.mycompany.mypackage" but edit that to your liking. Many values are only located within the `package.json` file, like the package description. It's expected that you will edit it after generation.
     
     $ $EDITOR package.json
     
@@ -56,4 +56,4 @@ New GUIDs are generated on each invocation. However, if you're adding a new file
 
 ## Acknowledgements
 
-Thank you to Adam Graham of Zigurous for creating [unity-package-template](https://github.com/zigurous/unity-package-template), which this is a fork of.
+Thank you to Adam Graham of Zigurous for creating [unity-package-template](https://github.com/zigurous/unity-package-template), of which this is a fork.
