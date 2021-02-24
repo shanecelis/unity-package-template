@@ -56,4 +56,4 @@ New GUIDs are generated on each invocation. However, if you're adding a new file
 
 ## Acknowledgements
 
-Thank you to Adam Graham of Zigurous for creating [unity-package-template](https://github.com/zigurous/unity-package-template), of which this is a fork.
+Thank you to [Adam Graham](https://twitter.com/Zigurous) of [Zigurous](https://zigurous.com) for creating [unity-package-template](https://github.com/zigurous/unity-package-template), of which this is a fork.
