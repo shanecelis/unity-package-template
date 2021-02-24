@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Shane Celis",
+  "classifications": [ "Unity3D", "Package" ],
+  "name": "Unity Package",
+  "identity": "seawisphunter.unitypackage",
+  // "groupIdentity": "seawisphunter",
+  "shortName": "unitypackage",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "sourceName": "unity-package-template",
+  "preferNameDirectory":true,
+  "symbols":{
+    "author": {
+      "type": "parameter",
+      "defaultValue": "John Smith",
+      "replaces": "Zigurous"
+    },
+    "unity-version": {
+      "type": "parameter",
+      "defaultValue": "2018.4",
+      "replaces":"2019.4"
+    }
+  }
+
+}
