@@ -1,5 +1,9 @@
 #!/bin/bash
+# Collect the GUIDs for inclusion in the template.json file.
+
+# echo >&2 "Warning: Remove the last comma on the GUIDs."
+# Nevermind. Perl will handle it.
 
 echo '  "guids": ['
-grep -hr ^guid * | awk '{printf "    \"%s\",\n", $2}'
+grep -hr ^guid * | awk '{printf "    \"%s\",\n", $2}' | perl -pe 'BEGIN { $/=""; } { s/,([^,]*)$/$1/gs; }'
 echo '  ],'
