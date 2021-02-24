@@ -16,24 +16,26 @@
     "name": {
       "type": "parameter",
       "defaultValue": "My Package",
-      "replaces": "Template"
+      "replaces": "{Template}"
     },
     "company": {
       "type": "parameter",
       "defaultValue": "Acme",
-      "replaces": "Zigurous"
+      "replaces": "{Zigurous}"
     },
     "nameNoSpaces": {
       "type": "derived",
       "valueSource": "name",
       "valueTransform": "ValueWithoutSpaces",
-      "fileRename": "Template"
+      "fileRename": "Template",
+      "replaces": "Template"
     },
     "companyNoSpaces": {
       "type": "derived",
       "valueSource": "company",
       "valueTransform": "ValueWithoutSpaces",
-      "fileRename": "Zigurous"
+      "fileRename": "Zigurous",
+      "replaces": "Zigurous"
     },
     "nameLower": {
       "type": "generated",
