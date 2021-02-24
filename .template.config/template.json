@@ -21,7 +21,8 @@
     "company": {
       "type": "parameter",
       "defaultValue": "Acme",
-      "replaces": "{Zigurous}"
+      "replaces": "{Zigurous}",
+      "isRequired": true
     },
     "nameNoSpaces": {
       "type": "derived",
