@@ -102,6 +102,10 @@
       "type": "parameter",
       "defaultValue": "2018.3",
       "replaces":"2019.4"
+    },
+    "HostIdentifier": {
+      "type": "bind",
+      "binding": "HostIdentifier"
     }
   },
   "forms": {
@@ -143,6 +147,30 @@
           "exclude": [ ".git/**" ]
         }
       ]
+    }
+  ],
+  "primaryOutputs": [
+    {
+      "path": "package.json"
+    }
+  ],
+  "postActions": [
+    {
+      "condition": "(HostIdentifier != \"dotnetcli\")",
+      "description": "Opens package.json in the editor.",
+      "manualInstructions": [ ],
+      "actionId": "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
+      "args": {
+        "files": "0"
+      },
+      "continueOnError": true
+    },
+    {
+      "condition": "(HostIdentifier == \"dotnetcli\")",
+      "manualInstructions": [ {
+        "text": "Edit 'package.json'."
+      }],
+      "continueOnError": true
     }
   ]
 
