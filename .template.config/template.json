@@ -127,6 +127,7 @@
     "17744dc8841f01845950176f54e87817",
     "2dcb02c4ba1b25141b7cb25e25135974",
     "5aac7f2d34b5d48c4bed80c4dba49fe1",
+    "7454f8eae072343b5896e7ef2eed2079",
     "96cc9e30d405f79469af0fc01a07e76b",
     "a14955afcaedcdc4593859f360004f31",
     "abe1f18a4d378414baf7bf212b7106d5",
@@ -144,7 +145,9 @@
     {
       "modifiers": [
         {
-          "exclude": [ ".git/**", ".#**" ]
+          "exclude": [ ".git/**", ".#**", "README.md", "README.md.meta" ],
+          "rename": { "_README.md": "README.md",
+                      "_README.md.meta": "README.md.meta" }
         }
       ]
     }
@@ -152,23 +155,26 @@
   "primaryOutputs": [
     {
       "path": "package.json"
+    },
+    {
+      "path": "README.md"
     }
   ],
   "postActions": [
     {
       "condition": "(HostIdentifier != \"dotnetcli\")",
-      "description": "Opens package.json in the editor.",
+      "description": "Opens package.json and README.md in the editor.",
       "manualInstructions": [ ],
       "actionId": "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
       "args": {
-        "files": "0"
+        "files": "2"
       },
       "continueOnError": true
     },
     {
       "condition": "(HostIdentifier == \"dotnetcli\")",
       "manualInstructions": [ {
-        "text": "Edit 'package.json'."
+        "text": "Edit 'package.json' and 'README.md'."
       }],
       "continueOnError": true
     }
