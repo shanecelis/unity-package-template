@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Tests
+namespace Zigurous.Template.Tests
 {
     public class RuntimeExampleTest
     {
