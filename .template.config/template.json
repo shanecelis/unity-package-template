@@ -12,17 +12,103 @@
   },
   "sourceName": "unity-package-template",
   "preferNameDirectory":true,
-  "symbols":{
+  "symbols": {
+    "name": {
+      "type": "parameter",
+      "defaultValue": "MyPackage",
+      "replaces": "Template",
+      "fileRename": "Template"
+    },
+    "nameLower": {
+      "type": "generated",
+      "generator": "casing",
+      "parameters": {
+        "source":"name",
+        "toLower": true
+      }
+    },
+    "company": {
+      "type": "parameter",
+      "defaultValue": "Acme",
+      "replaces": "Zigurous",
+      "fileRename": "Zigurous"
+    },
+    "companyLower": {
+      "type": "generated",
+      "generator": "casing",
+      "parameters": {
+        "source": "company",
+        "toLower": true
+      }
+    },
+    "fullPackageName": {
+      "type": "generated",
+      "generator": "join",
+      "replaces": "com.zigurous.template",
+      "parameters": {
+        "separator": ".",
+        "symbols": [
+          {
+            "type": "const",
+            "value": "com"
+          },
+          {
+            "type": "ref",
+            "value": "companyLower"
+          },
+          {
+            "type": "ref",
+            "value": "nameLower"
+          }
+        ]
+      }
+    },
+    "companyDomain": {
+      "type": "generated",
+      "generator": "join",
+      "replaces": "zigurous.com",
+      "parameters": {
+        "separator": ".",
+        "symbols": [
+          {
+            "type": "ref",
+            "value": "companyLower"
+          },
+          {
+            "type": "const",
+            "value": "com"
+          }
+        ]
+      }
+    },
+    "displayName": {
+      "type": "parameter",
+      "defaultValue": "My Package",
+      "replaces": "Zigurous Template"
+    },
     "author": {
       "type": "parameter",
       "defaultValue": "John Smith",
-      "replaces": "Zigurous"
+      "replaces": "John Smith"
     },
-    "unity-version": {
+    "unity": {
       "type": "parameter",
-      "defaultValue": "2018.4",
+      "defaultValue": "2018.3",
       "replaces":"2019.4"
     }
+  },
+  "forms": {
+    "ValueAfterLastDot": {
+      "identifier": "replace",
+      "pattern": "^.*\\.(?=[^\\.]+$)",        // regex to match everything up to and including the final "."
+      "replacement": ""  // replace it with empty string
+    },
+    "ValueAsFilename": {
+      "identifier": "replace",
+      "pattern": " ",
+      "replacement": ""
+    },
+    "global": [ "identity" ]
   },
   "guids": [
     "a14955afcaedcdc4593859f360004f31",
