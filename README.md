@@ -30,6 +30,7 @@ Create a directory. Choose the name carefully; its name is your package's name.
 
 This creates the following files (meta files excluded for clarity):
 
+
     MyPackage
     ├── CHANGELOG.md
     ├── Documentation~
@@ -42,6 +43,11 @@ This creates the following files (meta files excluded for clarity):
     ├── Runtime
     │   ├── MyCompany.MyPackage.asmdef
     │   └── RuntimeExample.cs
+    ├── Samples~
+    │   ├── Sample 1
+    │   │   └── Sample1.cs
+    │   └── Sample 2
+    │       └── pic.png
     ├── Tests
     │   ├── Editor
     │   │   ├── EditorExampleTest.cs
@@ -57,7 +63,7 @@ The generated package name is "com.mycompany.mypackage" but edit that to your li
 
 ## Using the Package
 
-See Unity's documentation for ways that you can [share your package](https://docs.unity3d.com/Manual/cus-share.html).
+See Unity's documentation for ways that you can [share your package](https://docs.unity3d.com/Manual/cus-share.html) or the template's [README](_README.md).
 
 ## Technical Notes
 
