@@ -13,5 +13,15 @@
   "license": "Undeclared",
   "keywords": [
     "unity"
+  ],
+  "samples": [
+    {
+      "displayName": "Sample 1",
+      "path": "Samples~/Sample 1"
+    },
+    {
+      "displayName": "Sample 2",
+      "path": "Samples~/Sample 2"
+    }
   ]
 }
