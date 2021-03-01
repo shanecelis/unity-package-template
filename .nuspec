@@ -18,6 +18,7 @@
   </metadata>
   <files>
     <file src=".template.config/template.json" target="content/.template.config" />
-    <file src="*/**" target="content/" exclude=".git/**;obj/**;bin/**;Samples/**;**/.DS_Store;**/*.nupkg"/>
+    <file src=".gitignore" target="content/.gitignore" />
+    <file src="*/**;*" target="content/" exclude=".git/**;obj/**;bin/**;Samples/**;**/.DS_Store;**/*.nupkg;.nuspec"/>
   </files>
 </package>
