@@ -169,9 +169,18 @@
     {
       "modifiers": [
         {
-          "exclude": [ ".git/**", ".#**", "README.md", "README.md.meta" ],
+          "exclude": [ ".git/**",
+                       ".#**",
+                       "README.md", "README.md.meta",
+                       "LICENSE.md", "LICENSE.md.meta",
+                       "Samples/**", "Samples.meta",
+                       "*.nupkg", "*.nupkg.meta",
+                       ".nuspec", ".nuspec.meta"
+                     ],
           "rename": { "_README.md": "README.md",
-                      "_README.md.meta": "README.md.meta" }
+                      "_README.md.meta": "README.md.meta",
+                      "_LICENSE.md": "LICENSE.md",
+                      "_LICENSE.md.meta": "LICENSE.md.meta" }
         }
       ]
     }
