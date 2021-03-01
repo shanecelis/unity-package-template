@@ -4,11 +4,22 @@ This is a Unity Package Template made according to Unity's [layout convention](h
 
 ## Installation
 
-Install the template.
+Install the template from NuGet or from a cloned repository.
+
+### Install from NuGet
+
+Install the template from NuGet.
+
+    $ dotnet new --install SeawispHunter.Unity3D.Package.Template
+
+### Install from repository
+
+Install the template from git repo.
 
     $ git clone https://github.com/shanecelis/unity-package-template
     $ dotnet new --install unity-package-template
     
+
 ## Usage
 
 Create a directory. Choose the name carefully; its name is your package's name.
@@ -16,7 +27,7 @@ Create a directory. Choose the name carefully; its name is your package's name.
     $ mkdir MyPackage
     $ cd MyPackage
     $ dotnet new unitypackage --company "My Company"
-    
+
 This creates the following files (meta files excluded for clarity):
 
     MyPackage
@@ -39,11 +50,11 @@ This creates the following files (meta files excluded for clarity):
     │       ├── MyCompany.MyPackage.Tests.asmdef
     │       └── RuntimeExampleTest.cs
     └── package.json
-    
+
 The generated package name is "com.mycompany.mypackage" but edit that to your liking. Many values are only located within the `package.json` file, like the package description. It's expected that you will edit it after generation.
-    
+
     $ $EDITOR package.json
-    
+
 ## Using the Package
 
 See Unity's documentation for ways that you can [share your package](https://docs.unity3d.com/Manual/cus-share.html).
