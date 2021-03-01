@@ -107,6 +107,20 @@
     "HostIdentifier": {
       "type": "bind",
       "binding": "HostIdentifier"
+    },
+    "packageType": {
+      "type": "parameter",
+      "datatype": "choice",
+      "defaultValue": "library",
+      "choices": [
+        { "choice": "tests" },
+        { "choice": "sample" },
+        { "choice": "template" },
+        { "choice": "module" },
+        { "choice": "library" },
+        { "choice": "tool" }
+      ],
+      "replaces": "{packageType}"
     }
   },
   "forms": {

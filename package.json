@@ -4,6 +4,7 @@
   "displayName": "{Zigurous}'s {Template}",
   "description": "Lorem ipsum description.",
   "unity": "2019.4",
+  "type": "{packageType}",
   "author": {
     "name": "John Smith",
     "email": "support@zigurous.com",
