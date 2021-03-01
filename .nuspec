@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SeawispHunter.UnityPackageTemplate</id>
+    <version>0.1.0</version>
+    <description>
+      Creates Unity 3D Package.
+    </description>
+    <authors>Shane Celis of SeawispHunter, LLC</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src=".template.config/template.json" target="content/.template.config" />
+    <file src="*/**" target="content/" exclude=".git/**;obj/**;bin/**;Samples/**;**/.DS_Store;**/*.nupkg"/>
+  </files>
+</package>
