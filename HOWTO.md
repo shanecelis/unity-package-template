@@ -8,7 +8,7 @@ Remind myself how to do the maintenance of this package.
 
 ## How to inspect package?
 
-   $ unzip -l SeawispHunter.Unity3D.Package.Template.0.1.1.nupkg
+   $ unzip -l SeawispHunter.Unity3D.Package.Template.\*.nupkg
 
 ## How to upload package?
 
@@ -17,3 +17,7 @@ Remind myself how to do the maintenance of this package.
 ## How to generate the file tree?
 
    $ tree -I '*.meta' | pbcopy
+
+## How to update GUIDs?
+
+   $ bash .template.config/collect-guids
