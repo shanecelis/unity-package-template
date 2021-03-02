@@ -4,7 +4,7 @@
     <id>SeawispHunter.Unity3D.Package.Template</id>
     <version>0.1.1</version>
     <description>
-      Create Unity 3D Package from a template.
+      Creates a Unity 3D Package from a template
     </description>
     <authors>Shane Celis of Seawisp Hunter, LLC</authors>
     <license type="expression">MIT</license>
