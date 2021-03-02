@@ -8,7 +8,7 @@ Install the template from NuGet or from a cloned repository.
 
 ### Install from NuGet
 
-Install the template from NuGet.
+Install the template from [NuGet](https://www.nuget.org/packages/SeawispHunter.Unity3D.Package.Template/).
 
     $ dotnet new --install SeawispHunter.Unity3D.Package.Template
 
