@@ -3,6 +3,8 @@
   "author": "Shane Celis",
   "classifications": [ "Unity3D", "Package" ],
   "name": "Unity Package",
+  "generatorVersions": "[1.0.0.0-*)",
+  "precedence": "100",
   "identity": "seawisphunter.unitypackage",
   "groupIdentity": "seawisphunter",
   "shortName": "unitypackage",
@@ -197,12 +199,15 @@
   ],
   "postActions": [
     {
+      "id": "open-file",
       "condition": "(HostIdentifier != \"dotnetcli\")",
       "description": "Opens package.json and README.md in the editor.",
-      "manualInstructions": [ ],
+      "manualInstructions": [ {
+        "text": "Edit 'package.json' and 'README.md'."
+      }],
       "actionId": "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
       "args": {
-        "files": "2"
+        "files": "0",
       },
       "continueOnError": true
     },
