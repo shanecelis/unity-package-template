@@ -211,6 +211,7 @@
       "manualInstructions": [ {
         "text": "Edit 'package.json' and 'README.md'."
       }],
+      "actionId": "AC1156F7-BB77-4DB8-B28F-24EEBCCA1E5C",
       "continueOnError": true
     }
   ]
